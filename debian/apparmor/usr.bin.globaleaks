@@ -4,7 +4,6 @@ profile usr.bin.globaleaks flags=(attach_disconnected) {
     #include <abstractions/base>
     #include <abstractions/nameservice>
     #include <abstractions/openssl>
-    #include <abstractions/python>
 
     capability setgid,
     capability setuid,
@@ -31,6 +30,9 @@ profile usr.bin.globaleaks flags=(attach_disconnected) {
 
     /usr/ r,
     /usr/share/** r,
+
+    /opt/venvs/securedrop-app-code/** r,
+    /opt/venvs/securedrop-app-code/**/__pycache__/ rw,
 
     /var/globaleaks/ wr,
     /var/globaleaks/** lrwk,

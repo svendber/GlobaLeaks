@@ -1,0 +1,13 @@
+acme
+cryptography
+h2
+priority
+pyOpenSSL
+pynacl
+pyotp
+python_debian
+python_gnupg
+service_identity
+sqlalchemy
+txtorcon
+twisted

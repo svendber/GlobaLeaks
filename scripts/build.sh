@@ -103,11 +103,6 @@ for TARGET in $TARGETS; do
   cp -r $BUILDSRC $BUILDDIR
   cd $BUILDDIR/GlobaLeaks
 
-  rm debian/control backend/requirements.txt
-
-  cp debian/controlX/control.$TARGET  debian/control
-  cp backend/requirements/requirements-$TARGET.txt backend/requirements.txt
-
   sed -i "s/stable; urgency=/$TARGET; urgency=/g" debian/changelog
 
   if [ $NOSIGN -eq 1 ]; then

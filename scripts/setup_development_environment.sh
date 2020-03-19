@@ -75,8 +75,6 @@ npm install -d
 cd ../../
 
 cd GlobaLeaks/backend
-rm requirements.txt
-cp requirements/requirements-$DISTRO_CODENAME.txt requirements.txt
 
 python3 -mvenv env
 source env/bin/activate

@@ -27,8 +27,7 @@ setupClientDependencies() {
 
 setupBackendDependencies() {
   cd $TRAVIS_BUILD_DIR/backend  # to install backend dependencies
-  rm -rf requirements.txt
-  pip3 install -r requirements/requirements-bionic.txt
+  pip3 install -r requirements.txt
 }
 
 setupDependencies() {

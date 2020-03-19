@@ -1,0 +1,3 @@
+/opt/venvs/globaleaks/bin/globaleaks /usr/bin/globaleaks
+/opt/venvs/globaleaks/bin/gl-admin /usr/bin/gl-admin
+/opt/venvs/globaleaks/bin/gl-fix-permissions /usr/bin/gl-fix-permissions
